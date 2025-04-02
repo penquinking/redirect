@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return redirect("http://127.0.0.1:80")
+    return redirect("http://169.254.169.254/latest/meta-data/iam/")
